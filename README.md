@@ -70,7 +70,7 @@ Simple command is to use migrate command. This will execute upgrade migration as
 
 Another command is use migrations:execute --up / --down command. This command is more clear usage.
 
->       .\vendor\bin\doctrine-migrations migrations:execute --down App/Migrations/version_of_migrationfile.php
+>       .\vendor\bin\doctrine-migrations migrations:execute --down App/Migrations/version_of_migrationfile
 
 Above example is used to execute downgrade migration.\
 For detail documentaions, please visit the official site
