@@ -26,6 +26,12 @@ Create .env file inside root directory.
 
 Just simply copy-paste content from .env.example to your new .env file then edit some values as you need.
 
+## Create Database for application
+To create a database you must have sqlite3.exe installed on your machine. Run this command.
+
+>       sqlite3 yourdatabase.db
+
+
 ## Database Migrations
 Create Migrations folder inside root directory.
 
