@@ -9,3 +9,7 @@ Migrations/
 
 ## exclude vendor folder
 vendor/
+
+## exclude the database 
+## let user creates a new one
+app.db
