@@ -37,7 +37,11 @@ Server should be running at a moment. This way is recommended for Production. If
 
 ## Auto-Restart Server (Daemon)
 During development, it's very helpful if we not to stop-restart server every changes we made. It's annoying!\
-We use nodemon (Javascript daemon tool) to handle this. Just start development server as follows:
+We use nodemon (Javascript daemon tool) to handle this. First, make sure you have already installed node.js and nodemon. To install nodemon run this
+
+>       npm -g install nodemon
+
+After succesfuly installed then you can run development server as follows:
 
 >       nodemon server.php
 
