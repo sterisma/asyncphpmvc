@@ -4,8 +4,12 @@
 ## inclue .env.example
 !.env.example
 
-## exclude Migrations folder
-Migrations/
+## exclude composer.json
+## since we only need composer.lock to install dependencies
+composer.json
+
+## exclude any files inside Migrations folder
+Migrations/*
 
 ## exclude vendor folder
 vendor/
@@ -13,3 +17,6 @@ vendor/
 ## exclude the database 
 ## let user creates a new one
 app.db
+
+## exclude .http files
+*.http
