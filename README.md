@@ -13,19 +13,22 @@ PHP MVC Framework that allows asyncronous processing
 
 ## Clone this repo
 First step is to clone this repo
-> git clone https://github.com/sterisma/asyncphpmvc
+>       git clone https://github.com/sterisma/asyncphpmvc
 
 ## Installation
-installation is done using composer
-> composer install
+Installation is done using composer
+>       composer install
+
 composer will automatically generates vendor folder, and do some stuffs for you.
 
 ## Environment configuration
-create .env file inside root directory
-just copy-paste content from .env.example to your new .env file
-edit some values as you need.
+Create .env file inside root directory.
+
+Just simply copy-paste content from .env.example to your new .env file then edit some values as you need.
 
 ## Database Migrations
-create Migrations folder inside root directory.
-if needed take a look to 'migrations.php' and 'migrations-db.php' as you need.
-these two files are configurations for doctrine/migrations to run.
+Create Migrations folder inside root directory.
+
+If needed, take a look to 'migrations.php' and 'migrations-db.php' as you need.
+
+These two files are configurations for doctrine/migrations to run.
