@@ -1,0 +1,11 @@
+## exclude .env
+.env
+
+## inclue .env.example
+!.env.example
+
+## exclude Migrations folder
+Migrations/
+
+## exclude vendor folder
+vendor/

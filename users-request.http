@@ -1,0 +1,39 @@
+### post new user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "email" : "blehem@email.com",
+    "password": "blehem123"
+}
+
+### get all users
+GET http://localhost:8080/users
+
+### get one user by email
+GET http://localhost:8080/users/sterisma@email.com
+
+### delete one user by email
+DELETE http://localhost:8080/users/blehem@email.com
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImJsZWhlbUBlbWFpbC5jb20iLCJleHAiOjE3MzYwNTY2NTl9.Rze_S3TlWwgdutUSIMCtwoIxLtHuUVDNze4ZkUWadko
+
+
+
+### post new user
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+    "email" : "blehem@email.com",
+    "password": "blehem123",
+    "confirm": "blehem123"
+}
+
+### post new user
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+    "email" : "blehem@email.com",
+    "password": "blehem123"
+}
