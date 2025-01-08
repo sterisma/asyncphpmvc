@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a35d15441c53410fad3683ec86a0611",
+    "content-hash": "2040d8cd45364142c31c81da741bbcc6",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -135,6 +135,59 @@
                 }
             ],
             "time": "2023-05-12T12:33:20+00:00"
+        },
+        {
+            "name": "dfridrich/php-mime-type",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dfridrich/PhpMimeType.git",
+                "reference": "8f4725db463b579067c564b067ad7f362e9f4cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dfridrich/PhpMimeType/zipball/8f4725db463b579067c564b067ad7f362e9f4cf4",
+                "reference": "8f4725db463b579067c564b067ad7f362e9f4cf4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9",
+                "symfony/http-foundation": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "symfony/http-foundation": "Allows you to get prepared Symfony response."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Defr\\": "legacy/",
+                    "Defr\\PhpMimeType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dennis Fridrich",
+                    "email": "fridrich.dennis@gmail.com"
+                }
+            ],
+            "description": "Simple PHP class for guessing file mime type based on file extension with ability to use in Symfony project.",
+            "homepage": "https://github.com/dfridrich/PhpMimeType",
+            "keywords": [
+                "mimetype",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/dfridrich/PhpMimeType/issues",
+                "source": "https://github.com/dfridrich/PhpMimeType/tree/v3.0.0"
+            },
+            "time": "2022-06-21T22:18:48+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -1414,6 +1467,69 @@
                 }
             ],
             "time": "2023-11-13T13:48:05+00:00"
+        },
+        {
+            "name": "react/filesystem",
+            "version": "0.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/filesystem.git",
+                "reference": "385933fdf47ad2db195c859523a8d854792dbad2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/filesystem/zipball/385933fdf47ad2db195c859523a8d854792dbad2",
+                "reference": "385933fdf47ad2db195c859523a8d854792dbad2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3 || ^2.8",
+                "react/promise-stream": "^1.2",
+                "react/stream": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "react/async": "^4 || ^3"
+            },
+            "suggest": {
+                "ext-eio": "* for great I/O performance",
+                "ext-uv": "* for better I/O performance"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Filesystem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Asynchronous filesystem abstraction.",
+            "keywords": [
+                "asynchronous",
+                "filesystem"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/filesystem/issues",
+                "source": "https://github.com/reactphp/filesystem/tree/0.2.x"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/reactphp",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-03-26T08:38:46+00:00"
         },
         {
             "name": "react/http",
@@ -3191,7 +3307,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "react/filesystem": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

@@ -9,6 +9,7 @@ use FastRoute\DataGenerator\GroupCountBased;
 use Clue\React\SQLite\DatabaseInterface;
 
 use App\Controllers\HomeController;
+use App\Controllers\StaticFilesController;
 use App\Controllers\UsersController;
 use App\Models\AuthModel;
 use App\Models\UserModel;
@@ -30,6 +31,14 @@ class Routes
     public function load(): RouteCollector
     {
         $protected = true;
+
+        ## Static files handler
+        $filesystem = \React\Filesystem\Factory::create();
+        $this->routes->get('/public/{file:.*\.\w+}', [new StaticFilesController($filesystem), 'serve']);
+        $this->routes->get('/{controller}/public/{file:.*\.\w+}', [new StaticFilesController($filesystem), 'redirect']);
+        $this->routes->get('/{controller}/{subcon}/public/{file:.*\.\w+}', [new StaticFilesController($filesystem), 'redirect']);
+
+
         $this->routes->get('/', [new HomeController(), 'index']);
 
         ## routes for users
