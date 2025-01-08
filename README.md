@@ -19,7 +19,7 @@ First step is to clone this repo
 
 ## Installation
 Installation is done using composer
->       ```composer install```
+>       composer install
 
 If error happens because of missing ext-sqlite or anything else, just add flag --ignore-platform-reqs
 >       composer install --ignore-platform-reqs
