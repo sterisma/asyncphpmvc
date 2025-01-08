@@ -19,7 +19,10 @@ First step is to clone this repo
 
 ## Installation
 Installation is done using composer
->       composer install
+>       ```composer install```
+
+If error happens because of missing ext-sqlite or anything else, just add flag --ignore-platform-reqs
+>       composer install --ignore-platform-reqs
 
 composer will automatically generates vendor folder, and do some stuffs for you.
 
@@ -74,4 +77,4 @@ Another command is use migrations:execute --up / --down command. This command is
 
 Above example is used to execute downgrade migration.\
 For detail documentaions, please visit the official site
-https://www.doctrine-project.org/projects/doctrine-migrations/en/3.8/index.html
+[Doctrine](https://www.doctrine-project.org/projects/doctrine-migrations/en/3.8/index.html)
